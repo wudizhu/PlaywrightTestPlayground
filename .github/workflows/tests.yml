@@ -10,7 +10,7 @@ jobs:
       - run: npm ci
       - run: npx playwright install-deps
       - run: npx playwright install
-      - run: npx playwright test
+      - run: npx playwright test --project chromium
       - uses: actions/upload-artifact@v1
         if: always()
         with:
