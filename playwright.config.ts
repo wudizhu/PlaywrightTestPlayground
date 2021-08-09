@@ -1,6 +1,12 @@
 import { PlaywrightTestConfig, devices } from "@playwright/test";
 const config: PlaywrightTestConfig = {
   reporter: 'list',
+  retries: 2,
+  use: {
+    screenshot: 'only-on-failure',
+    video: 'off',
+    trace: 'on-first-retry',
+  },
   projects: [
     {
       name: 'chromium',
