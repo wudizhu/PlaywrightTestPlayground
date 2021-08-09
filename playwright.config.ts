@@ -5,7 +5,7 @@ const config: PlaywrightTestConfig = {
   use: {
     screenshot: 'only-on-failure',
     video: 'off',
-    trace: 'on-first-retry',
+    trace: 'on',
   },
   projects: [
     {
